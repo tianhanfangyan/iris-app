@@ -1,3 +1,5 @@
+# github.com/BurntSushi/toml v0.3.1
+github.com/BurntSushi/toml
 # github.com/Joker/jade v1.0.0
 github.com/Joker/jade
 # github.com/Shopify/goreferrer v0.0.0-20181106222321-ec9c9a553398
@@ -63,6 +65,8 @@ github.com/kataras/pio/terminal
 # github.com/klauspost/compress v1.4.1
 github.com/klauspost/compress/gzip
 github.com/klauspost/compress/flate
+# github.com/klauspost/cpuid v1.2.0
+github.com/klauspost/cpuid
 # github.com/mattn/go-sqlite3 v1.10.0
 github.com/mattn/go-sqlite3
 # github.com/microcosm-cc/bluemonday v1.0.1
@@ -71,6 +75,8 @@ github.com/microcosm-cc/bluemonday
 github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v1.0.1
 github.com/modern-go/reflect2
+# github.com/ryanuber/columnize v2.1.0+incompatible
+github.com/ryanuber/columnize
 # github.com/shurcooL/sanitized_anchor_name v0.0.0-20170918181015-86672fcb3f95
 github.com/shurcooL/sanitized_anchor_name
 # golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9

@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/casbin/casbin"
 	"github.com/go-xorm/xorm"
+	cm "github.com/iris-contrib/middleware/casbin"
 	"github.com/kataras/iris"
 	_ "github.com/mattn/go-sqlite3"
 	"os"
@@ -23,6 +25,9 @@ type Config struct {
 
 var config *Config
 
+// casbin RESTful Model
+var Enforcer = casbin.NewEnforcer("keymatch_model.conf", "keymatch_policy.csv")
+
 func parseFlags() {
 	config = &Config{}
 	flag.StringVar(&config.ServerHost, "p", "0.0.0.0:9800", "default server address")
@@ -39,6 +44,11 @@ func main() {
 
 	app := iris.New()
 
+	// casbin 权限控制
+	casbinMiddleware := cm.New(Enforcer)
+	app.WrapRouter(casbinMiddleware.Wrapper())
+
+	// sqlite 数据库
 	orm, err := xorm.NewEngine("sqlite3", "./users.db")
 	if err != nil {
 		fmt.Printf("orm failed to initialized, %s", err)

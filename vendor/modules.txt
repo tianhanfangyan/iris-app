@@ -2,6 +2,8 @@
 github.com/BurntSushi/toml
 # github.com/Joker/jade v1.0.0
 github.com/Joker/jade
+# github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible
+github.com/Knetic/govaluate
 # github.com/Shopify/goreferrer v0.0.0-20181106222321-ec9c9a553398
 github.com/Shopify/goreferrer
 # github.com/aymerick/raymond v2.0.2+incompatible
@@ -9,6 +11,17 @@ github.com/aymerick/raymond
 github.com/aymerick/raymond/ast
 github.com/aymerick/raymond/parser
 github.com/aymerick/raymond/lexer
+# github.com/casbin/casbin v1.8.2
+github.com/casbin/casbin
+github.com/casbin/casbin/effect
+github.com/casbin/casbin/log
+github.com/casbin/casbin/model
+github.com/casbin/casbin/persist
+github.com/casbin/casbin/persist/file-adapter
+github.com/casbin/casbin/rbac
+github.com/casbin/casbin/rbac/default-role-manager
+github.com/casbin/casbin/util
+github.com/casbin/casbin/config
 # github.com/eknkc/amber v0.0.0-20171010120322-cdade1c07385
 github.com/eknkc/amber
 github.com/eknkc/amber/parser
@@ -28,6 +41,8 @@ github.com/iris-contrib/blackfriday
 github.com/iris-contrib/formBinder
 # github.com/iris-contrib/go.uuid v2.0.0+incompatible
 github.com/iris-contrib/go.uuid
+# github.com/iris-contrib/middleware v0.0.0-20181021162728-8bd5d51b3c2e
+github.com/iris-contrib/middleware/casbin
 # github.com/json-iterator/go v1.1.5
 github.com/json-iterator/go
 # github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
@@ -36,8 +51,8 @@ github.com/juju/errors
 github.com/kataras/golog
 # github.com/kataras/iris v11.1.0+incompatible
 github.com/kataras/iris
-github.com/kataras/iris/cache
 github.com/kataras/iris/context
+github.com/kataras/iris/cache
 github.com/kataras/iris/core/errors
 github.com/kataras/iris/core/handlerconv
 github.com/kataras/iris/core/host
@@ -46,18 +61,18 @@ github.com/kataras/iris/core/router
 github.com/kataras/iris/middleware/logger
 github.com/kataras/iris/middleware/recover
 github.com/kataras/iris/view
-github.com/kataras/iris/cache/client
 github.com/kataras/iris/core/memstore
 github.com/kataras/iris/macro
+github.com/kataras/iris/cache/client
 github.com/kataras/iris/macro/handler
 github.com/kataras/iris/macro/interpreter/ast
 github.com/kataras/iris/macro/interpreter/lexer
+github.com/kataras/iris/macro/interpreter/parser
 github.com/kataras/iris/cache/cfg
 github.com/kataras/iris/cache/client/rule
 github.com/kataras/iris/cache/entry
 github.com/kataras/iris/cache/ruleset
 github.com/kataras/iris/cache/uri
-github.com/kataras/iris/macro/interpreter/parser
 github.com/kataras/iris/macro/interpreter/token
 # github.com/kataras/pio v0.0.0-20180511174041-a9733b5b6b83
 github.com/kataras/pio

@@ -1,0 +1,6 @@
+p, normal, /users/*, GET
+p, normal, /users, POST
+p, normal, /*, GET
+p, admin, /users/*, *
+p, admin, /*, *
+g, cathrin, admin
